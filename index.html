@@ -1,0 +1,40 @@
+<!DOCTYPE html>g
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Condition Checking with if else</h1>
+
+    <form onsubmit="doSum(); return false">
+        num1: <input id="num1" type="number" required placeholder="enter a number">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3 id="result"> </h3>
+
+    <script>
+        function doSum() {
+            let firstNumber = +document.querySelector("#num1").value
+
+            let resultElement = document.querySelector("#result")
+
+            if (firstNumber%2==0) {
+                resultElement.innerHTML = "the number is even"
+            } else {
+                resultElement.innerHTML = "the number is odd"
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
